@@ -168,11 +168,44 @@ footer{
 
 /*---------- MEDIA QUERIES -----------*/
 @media only screen
-and (max-width: 768px){
+and (max-width: 800px){
 
   #navbar{
     justify-content: center;
     align-items: center;
   }
 
+  .portfolio-grid{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-row-gap: 25px;
+    justify-content: space-around;
+    padding: 25px 0;
+  }
+
+  p{
+    margin: 0 50px;
+    font-size: 1rem;
+  }
+
+}
+
+@media only screen
+and (max-width: 600px){
+
+  .portfolio-grid{
+    display: grid;
+    grid-template-columns: 75%;
+    grid-row-gap: 25px;
+    justify-content: center;
+    padding: 25px 0;
+  }
+
+  .icon-link{
+    margin-right: 10px;
+  }
+
+  i{
+    font-size: 2rem;
+  }
 }
